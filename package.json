@@ -1,5 +1,5 @@
 {
-  "name": "umf",
+  "name": "@maap-jupyterlab/umf-jupyter-extension",
   "version": "1.0.0",
   "description": "User Metadata Form Jupyter extension",
   "keywords": [
@@ -36,7 +36,7 @@
     "clean": "jlpm clean:lib",
     "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
     "clean:lintcache": "rimraf .eslintcache .stylelintcache",
-    "clean:labextension": "rimraf umf/labextension",
+    "clean:labextension": "rimraf umf-jupyter-extension/labextension",
     "clean:all": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:lintcache",
     "eslint": "jlpm eslint:check --fix",
     "eslint:check": "eslint . --cache --ext .ts,.tsx",
@@ -82,7 +82,7 @@
   },
   "jupyterlab": { 
     "extension": true,
-    "outputDir": "umf/labextension"
+    "outputDir": "umf-jupyter-extension/labextension"
   },
   "jupyter-releaser": {
     "hooks": {

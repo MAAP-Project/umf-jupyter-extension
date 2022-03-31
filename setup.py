@@ -1,5 +1,5 @@
 """
-umf setup
+umf-jupyter-extension setup
 """
 import json
 import sys
@@ -13,7 +13,7 @@ HERE = Path(__file__).parent.resolve()
 pkg_json = json.loads((HERE / "package.json").read_bytes())
 
 # The name of the project
-name = "umf"
+name = "umf-jupyter-extension"
 
 lab_path = (HERE / pkg_json["jupyterlab"]["outputDir"])
 

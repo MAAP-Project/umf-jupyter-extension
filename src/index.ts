@@ -34,7 +34,7 @@ const extension: JupyterFrontEndPlugin<void> = {
     const category = 'Metadata';
     palette.addItem({ command, category, args: { origin: 'from palette' } });
 
-    console.log('JupyterLab extension umf is activated!');
+    console.log('JupyterLab extension umf-jupyter-extension is activated!');
   },
 };
 
