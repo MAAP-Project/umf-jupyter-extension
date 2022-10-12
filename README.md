@@ -1,35 +1,38 @@
-# umf-jupyter-extension
+# User Metadata Form Jupyter Extension
 
-[![Github Actions Status](https://github.com/github_username/umf-jupyter-extension/workflows/Build/badge.svg)](https://github.com/github_username/umf/actions/workflows/build.yml)
+Jupyter extension that launches the MAAP USER SHARED DATA QUESTIONNAIRE.
 
-User Metadata Form jupyter extension
+Follow these steps to launch the questionnaire:
+
+1. Navigate to `View -> Activate Command Palette` to open the command palette.
+
+2. Search for and select `Open User Metadata Form`. This will launch the form in a new window.
+
 
 
 
 ## Requirements
 
-* JupyterLab >= 3.0
+* JupyterLab >= 3.4
 
 ## Install
 
 To install the extension, execute:
 
 ```bash
-pip install umf-jupyter-extension
+jupyter labextension install @maap-jupyterlab/umf-jupyter-extension
 ```
 
 ## Uninstall
 
-To remove the extension, execute:
+To uninstall the extension, execute:
 
 ```bash
-pip uninstall umf-jupyter-extension
+jupyter labextension uninstall @maap-jupyterlab/umf-jupyter-extension
 ```
 
 
-## Contributing
-
-### Development install
+## Development install
 
 Note: You will need NodeJS to build the extension package.
 
@@ -74,7 +77,3 @@ pip uninstall umf-jupyter-extension
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
 folder is located. Then you can remove the symlink named `umf-jupyter-extension` within that folder.
-
-### Packaging the extension
-
-See [RELEASE](RELEASE.md)
