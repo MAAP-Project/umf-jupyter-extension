@@ -21,7 +21,7 @@ Follow these steps to launch the questionnaire from JupyterLab:
 To install the extension, execute:
 
 ```bash
-jupyter labextension install @maap-jupyterlab/umf-jupyter-extension
+jupyter labextension install @maap-jupyterlab/umf_jupyter_extension
 ```  
 &nbsp;
 
@@ -30,7 +30,7 @@ jupyter labextension install @maap-jupyterlab/umf-jupyter-extension
 To uninstall the extension, execute:
 
 ```bash
-jupyter labextension uninstall @maap-jupyterlab/umf-jupyter-extension
+jupyter labextension uninstall @maap-jupyterlab/umf_jupyter_extension
 ```
   
 &nbsp;
@@ -45,7 +45,7 @@ The `jlpm` command is JupyterLab's pinned version of
 
 ```bash
 # Clone the repo to your local environment
-# Change directory to the umf-jupyter-extension directory
+
 # Install package in development mode
 pip install -e .
 # Link your development version of the extension with JupyterLab
@@ -75,14 +75,14 @@ jupyter lab build --minimize=False
 ## Development uninstall
 
 ```bash
-pip uninstall umf-jupyter-extension
+pip uninstall umf_jupyter_extension
 ```
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named `umf-jupyter-extension` within that folder.
+folder is located. Then you can remove the symlink named `umf_jupyter_extension` within that folder.
   
 &nbsp;
 
 ## Questions?
-Refer to the [Q&A discussion board](https://github.com/MAAP-Project/umf-jupyter-extension/discussions/categories/q-a).
+Refer to the [Q&A discussion board](https://github.com/MAAP-Project/umf_jupyter_extension/discussions/categories/q-a).

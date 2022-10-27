@@ -1,5 +1,5 @@
 {
-  "name": "@maap-jupyterlab/umf-jupyter-extension",
+  "name": "@maap-jupyterlab/umf_jupyter_extension",
   "version": "1.0.0",
   "description": "User Metadata Form Jupyter extension",
   "keywords": [
@@ -7,9 +7,9 @@
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/MAAP-Project/umf-jupyter-extension",
+  "homepage": "https://github.com/MAAP-Project/umf_jupyter_extension",
   "bugs": {
-    "url": "https://github.com/MAAP-Project/umf-jupyter-extension/issues"
+    "url": "https://github.com/MAAP-Project/umf_jupyter_extension/issues"
   },
   "license": "Apache 2.0",
   "author": {
@@ -25,7 +25,7 @@
   "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MAAP-Project/umf-jupyter-extension.git"
+    "url": "https://github.com/MAAP-Project/umf_jupyter_extension.git"
   },
   "scripts": {
     "build": "jlpm build:lib && jlpm build:labextension:dev",
@@ -36,7 +36,7 @@
     "clean": "jlpm clean:lib",
     "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
     "clean:lintcache": "rimraf .eslintcache .stylelintcache",
-    "clean:labextension": "rimraf umf-jupyter-extension/labextension",
+    "clean:labextension": "rimraf umf_jupyter_extension/labextension",
     "clean:all": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:lintcache",
     "eslint": "jlpm eslint:check --fix",
     "eslint:check": "eslint . --cache --ext .ts,.tsx",
@@ -53,7 +53,7 @@
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {
-    "@jupyterlab/application": "^3.1.0"
+    "@jupyterlab/application": "^3.5.0"
   },
   "devDependencies": {
     "@jupyterlab/builder": "^3.1.0",
@@ -80,9 +80,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "jupyterlab": { 
+  "jupyterlab": {
     "extension": true,
-    "outputDir": "umf-jupyter-extension/labextension"
+    "outputDir": "umf_jupyter_extension/labextension"
   },
   "jupyter-releaser": {
     "hooks": {

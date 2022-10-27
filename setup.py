@@ -1,5 +1,5 @@
 """
-umf-jupyter-extension setup
+umf_jupyter_extension setup
 """
 import json
 import sys
@@ -13,7 +13,7 @@ HERE = Path(__file__).parent.resolve()
 pkg_json = json.loads((HERE / "package.json").read_bytes())
 
 # The name of the project
-name = "umf-jupyter-extension"
+name = "umf_jupyter_extension"
 
 lab_path = (HERE / pkg_json["jupyterlab"]["outputDir"])
 
@@ -30,14 +30,14 @@ data_files_spec = [
     ("share/jupyter/labextensions/%s" % labext_name, str("."), "install.json"),
 ]
 
-long_description = (HERE / "README.md").read_text()
+long_description = (HERE / "README.md").read_text(encoding="utf8")
 
 version = (
     pkg_json["version"]
     .replace("-alpha.", "a")
     .replace("-beta.", "b")
     .replace("-rc.", "rc")
-) 
+)
 
 setup_args = dict(
     name=name,
@@ -51,7 +51,6 @@ setup_args = dict(
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
-    install_requires=[],
     zip_safe=False,
     include_package_data=True,
     python_requires=">=3.7",
